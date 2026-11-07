@@ -2,13 +2,19 @@
 
 Assistente educacional para aprender conceitos sobre investimentos no Brasil. Este projeto está sendo desenvolvido passo a passo como parte das aulas.
 
-## Etapa atual
+## Links do projeto
 
-Na Aula 1, o projeto tem uma conversa inicial pelo terminal. O FinBot responde a perguntas gerais sobre investimentos e mantém o histórico durante a conversa.
+| O quê | Link |
+|---|---|
+| Chat publicado (Streamlit Cloud) | https://finbot-giovanni.streamlit.app/ |
+| API publicada (Render) | https://finbot-api-7ht6.onrender.com |
+| Documentação da API | https://finbot-api-7ht6.onrender.com/docs |
+
+No plano gratuito, a API "dorme" depois de um tempo sem uso: a primeira pergunta pode demorar cerca de 1 minuto.
 
 ## Requisitos
 
-- Python 3.12
+- Python 3.15.1
 - Uma chave de API da Groq
 
 ## Como configurar no Windows
@@ -16,7 +22,7 @@ Na Aula 1, o projeto tem uma conversa inicial pelo terminal. O FinBot responde a
 Abra o projeto no VS Code e, no terminal integrado, confirme que está na pasta principal `finbot`. Execute os comandos abaixo, um de cada vez:
 
 ```powershell
-py -3.12 -m venv .venv
+py -3.15.1 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements-dev.txt
 Copy-Item .env.example .env
